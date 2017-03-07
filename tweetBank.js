@@ -32,6 +32,3 @@ const getFakeTweet = function() {
 for (let i = 0; i < 10; i++) {
   module.exports.add( getFakeName(), getFakeTweet() );
 }
-// console.log(data)
-// //console.log(_.filter({name: 'Shanna Ternary'}, {'name': 'Shanna Ternary'}))
-// console.log(find({'name': 'Scott Ternary'}))
