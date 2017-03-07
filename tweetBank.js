@@ -1,5 +1,5 @@
 const _ = require("lodash");
-var data =[];
+var data = [];
 function add (name, content) {
   data.push({ name: name, content: content });
 }
@@ -22,7 +22,7 @@ const getFakeName = function() {
   const fakeFirsts = ['Nimit', 'David', 'Shanna', 'Emily', 'Scott', 'Karen', 'Ben', 'Dan', 'Ashi', 'Kate', 'Omri', 'Gabriel', 'Joe', 'Geoff'];
   const fakeLasts = ['Hashington', 'Stackson', 'McQueue', 'OLogn', 'Ternary', 'Claujure', 'Dunderproto', 'Binder', 'Docsreader', 'Ecma'];
   return randArrayEl(fakeFirsts) + " " + randArrayEl(fakeLasts);
-};  
+};
 
 const getFakeTweet = function() {
   const awesome_adj = ['awesome', 'breathtaking', 'amazing', 'funny', 'sweet', 'cool', 'wonderful', 'mindblowing', 'impressive'];
@@ -32,5 +32,6 @@ const getFakeTweet = function() {
 for (let i = 0; i < 10; i++) {
   module.exports.add( getFakeName(), getFakeTweet() );
 }
-///console.log(find({'name': 'Scott Ternary'}))
-////WTF WHY
+// console.log(data)
+// //console.log(_.filter({name: 'Shanna Ternary'}, {'name': 'Shanna Ternary'}))
+// console.log(find({'name': 'Scott Ternary'}))

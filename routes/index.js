@@ -25,9 +25,10 @@ router.get('/', function (req, res) {
   res.render( 'index', { tweets: tweets } );
 });
 
-router.get('/news', function (req, res) {
-  res.send("hi");
-  console.log("hi")
+router.get('/users/:name', function(req, res) {
+  var name = req.params.name;
+  var list = tweetBank.find( {name: name} );
+  res.render( 'index', { tweets: list } );
 });
 
 module.exports = router;
